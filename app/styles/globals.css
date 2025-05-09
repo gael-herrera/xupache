@@ -1,0 +1,290 @@
+/* Estilos Globales para Sitio Web de Servidores */
+
+/* Reseteo y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Paleta de colores profesional */
+  --primary-color: #2c3e50; /* Azul oscuro para encabezados */
+  --secondary-color: #34495e; /* Azul medio para elementos secundarios */
+  --accent-color: #3498db; /* Azul brillante para acentos y enlaces */
+  --light-accent: #e9f2fb; /* Azul muy claro para fondos de secciones */
+  --text-color: #333; /* Casi negro para texto principal */
+  --text-secondary: #666; /* Gris oscuro para texto secundario */
+  --light-bg: #f8f9fa; /* Gris claro para fondos alternos */
+  --white: #ffffff; /* Blanco para fondos principales */
+  --border-color: #e0e0e0; /* Gris claro para bordes */
+
+  /* Tipografía */
+  --body-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --heading-font: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+/* Encabezados */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+/* Enlaces */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #217dbb;
+  text-decoration: underline;
+}
+
+/* Párrafos y listas */
+p {
+  margin-bottom: 1.2rem;
+}
+
+ul,
+ol {
+  margin: 1rem 0 1.5rem 2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Layout principal */
+header {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 1.5rem 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  min-height: calc(100vh - 200px);
+}
+
+footer {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* Navegación */
+nav {
+  background-color: var(--secondary-color);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  color: var(--white);
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+}
+
+nav a.active {
+  background-color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Secciones */
+section {
+  margin-bottom: 2.5rem;
+  background-color: var(--white);
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Tarjetas */
+.server-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.server-card {
+  background-color: var(--light-bg);
+  border-radius: 4px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.server-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.server-card h3 {
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+.server-card p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #217dbb;
+  text-decoration: none;
+}
+
+/* Ventajas y desventajas */
+.pros-cons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.pros,
+.cons {
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.pros {
+  background-color: rgba(52, 152, 219, 0.05);
+  border-left: 4px solid var(--accent-color);
+}
+
+.cons {
+  background-color: rgba(231, 76, 60, 0.05);
+  border-left: 4px solid #e74c3c;
+}
+
+.pros h3,
+.cons h3 {
+  margin-top: 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pros h3 {
+  color: var(--accent-color);
+}
+
+.cons h3 {
+  color: #c0392b;
+}
+
+/* Intro section */
+.intro {
+  text-align: center;
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+}
+
+.intro h2 {
+  border-bottom: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .pros-cons {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}

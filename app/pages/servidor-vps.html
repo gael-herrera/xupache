@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servidor VPS</title>
+    <link rel="stylesheet" href="../styles/globals.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Servidor VPS</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li>
+            <a href="servidor-web-dedicado.html">Servidor Web Dedicado</a>
+          </li>
+          <li><a href="servidor-vps.html" class="active">Servidor VPS</a></li>
+          <li>
+            <a href="servidor-web-compartido.html">Servidor Web Compartido</a>
+          </li>
+          <li>
+            <a href="servidor-web-en-la-nube.html">Servidor Web en la Nube</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section>
+          <h2>¿Cómo funciona un Servidor VPS?</h2>
+          <p>
+            Un servidor VPS (Virtual Private Server) es una partición virtual
+            dentro de un servidor físico que actúa como un servidor dedicado
+            independiente. Utiliza tecnologías de virtualización para dividir un
+            servidor físico en múltiples servidores virtuales aislados entre sí.
+          </p>
+          <p>
+            Cada VPS recibe una parte garantizada de los recursos del servidor
+            host (CPU, RAM, almacenamiento) y funciona con su propio sistema
+            operativo, dando al usuario control casi completo como si tuviera un
+            servidor dedicado, pero a un costo menor.
+          </p>
+          <p>
+            Las tecnologías de virtualización más comunes para los VPS son KVM,
+            Xen, OpenVZ y VMware, cada una con sus propias características y
+            limitaciones.
+          </p>
+        </section>
+
+        <section>
+          <h2>Ventajas y Desventajas</h2>
+          <div class="pros-cons">
+            <div class="pros">
+              <h3>Ventajas</h3>
+              <ul>
+                <li>Costo significativamente menor que un servidor dedicado</li>
+                <li>
+                  Control casi completo sobre el entorno del servidor (similar a
+                  un dedicado)
+                </li>
+                <li>
+                  Recursos garantizados (a diferencia del hosting compartido)
+                </li>
+                <li>
+                  Mayor seguridad y estabilidad comparado con hosting compartido
+                </li>
+                <li>
+                  Escalabilidad flexible: fácil aumento de recursos según
+                  necesidades
+                </li>
+                <li>
+                  IP dedicada y posibilidad de instalar certificados SSL propios
+                </li>
+                <li>Configuración personalizada del entorno de servidor</li>
+              </ul>
+            </div>
+            <div class="cons">
+              <h3>Desventajas</h3>
+              <ul>
+                <li>Rendimiento inferior a un servidor dedicado equivalente</li>
+                <li>Requiere conocimientos técnicos para su administración</li>
+                <li>Recursos limitados comparados con servidores dedicados</li>
+                <li>
+                  Posibles problemas de "vecinos ruidosos" (otros VPS que
+                  sobrecargan el servidor físico)
+                </li>
+                <li>
+                  Algunas tecnologías de virtualización pueden limitar ciertas
+                  funcionalidades
+                </li>
+                <li>Mayor costo que el hosting compartido</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>¿Cuándo se recomienda su uso?</h2>
+          <p>Un servidor VPS es recomendable en los siguientes casos:</p>
+          <ul>
+            <li>
+              Sitios web con tráfico medio (10,000-100,000 visitas mensuales)
+            </li>
+            <li>
+              Pequeñas y medianas empresas que necesitan mayor control sobre su
+              entorno
+            </li>
+            <li>
+              Proyectos que han superado las limitaciones del hosting compartido
+            </li>
+            <li>
+              Aplicaciones web que requieren configuraciones personalizadas
+            </li>
+            <li>Desarrollo y pruebas de software</li>
+            <li>Alojamiento de múltiples sitios web o aplicaciones</li>
+            <li>
+              Proyectos con presupuesto limitado que necesitan un rendimiento
+              superior al hosting compartido
+            </li>
+            <li>
+              Empresas que necesitan un entorno aislado pero no pueden
+              justificar el costo de un servidor dedicado
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Requisitos de Hardware</h2>
+          <p>Los recursos asignados a un VPS típicamente incluyen:</p>
+          <ul>
+            <li>
+              <strong>CPU virtual:</strong> 1-16 vCores (núcleos virtuales)
+            </li>
+            <li><strong>Memoria RAM:</strong> 1GB-64GB</li>
+            <li><strong>Almacenamiento:</strong> 20GB-1TB (SSD o HDD)</li>
+            <li><strong>Ancho de banda:</strong> 1TB-10TB mensuales</li>
+            <li>
+              <strong>Conexión a Internet:</strong> 100Mbps-1Gbps compartido
+            </li>
+          </ul>
+          <p>
+            Estos recursos son virtualizados del hardware físico del servidor
+            host, que generalmente cuenta con procesadores de alto rendimiento,
+            grandes cantidades de RAM y almacenamiento rápido.
+          </p>
+        </section>
+
+        <section>
+          <h2>Sistemas Operativos Compatibles</h2>
+          <h3>Se puede implementar en:</h3>
+          <ul>
+            <li>Linux (Ubuntu, CentOS, Debian, Fedora, etc.)</li>
+            <li>Windows Server (2012, 2016, 2019, 2022)</li>
+            <li>FreeBSD</li>
+            <li>OpenBSD</li>
+          </ul>
+
+          <h3>Limitaciones:</h3>
+          <p>
+            Las limitaciones dependen de la tecnología de virtualización
+            utilizada:
+          </p>
+          <ul>
+            <li>
+              <strong>OpenVZ:</strong> Solo soporta Linux y tiene limitaciones
+              en la personalización del kernel
+            </li>
+            <li>
+              <strong>KVM y Xen:</strong> Soportan prácticamente cualquier
+              sistema operativo compatible con la arquitectura x86/x64
+            </li>
+            <li>
+              <strong>Virtualización basada en contenedores:</strong>
+              Generalmente limitada a variantes de Linux
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Ejemplos de Proveedores</h2>
+          <ul>
+            <li>DigitalOcean</li>
+            <li>Vultr</li>
+            <li>Linode (Akamai)</li>
+            <li>OVHcloud</li>
+            <li>A2 Hosting</li>
+            <li>Hostinger</li>
+            <li>Hostwinds</li>
+            <li>InMotion Hosting</li>
+            <li>DreamHost</li>
+            <li>Bluehost</li>
+          </ul>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>© 2025 - Administración de Sistemas Operativos - Equipo 9</p>
+    </footer>
+  </body>
+</html>
