@@ -164,12 +164,15 @@ section {
 /* Tarjetas */
 .server-types {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2rem;
 }
 
 .server-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--light-bg);
   border-radius: 4px;
   padding: 1.5rem;
@@ -179,7 +182,7 @@ section {
 
 .server-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(14, 12, 12, 0.1);
 }
 
 .server-card h3 {
@@ -207,6 +210,8 @@ section {
 .btn:hover {
   background-color: #217dbb;
   text-decoration: none;
+  color: var(--white);
+  transition: all 0.2s ease;
 }
 
 /* Ventajas y desventajas */

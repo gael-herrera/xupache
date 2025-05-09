@@ -31,6 +31,16 @@
     <main>
       <article>
         <section>
+          <h2>Servidores Web en la Nube</h2>
+          <p>
+            Los servidores web en la nube representan una evolución en la forma
+            de alojar sitios web y aplicaciones, proporcionando flexibilidad,
+            escalabilidad y un modelo de pago por uso que se adapta a las
+            necesidades cambiantes de los negocios modernos.
+          </p>
+        </section>
+
+        <section>
           <h2>¿Cómo funciona un Servidor Web en la Nube?</h2>
           <p>
             Un servidor web en la nube utiliza una infraestructura de
@@ -90,15 +100,187 @@
                 <li>Despliegue rápido de nuevos recursos</li>
                 <li>Distribución geográfica mediante CDN integradas</li>
                 <li>Actualizaciones y mantenimiento automáticos</li>
-                <li>Alto nivel de seguridad y cumplimiento normativo</li>
               </ul>
             </div>
             <div class="cons">
               <h3>Desventajas</h3>
+              <ul>
+                <li>Dependencia de la conexión a internet</li>
+                <li>Posible pérdida de control sobre los datos</li>
+                <li>Costos impredecibles si hay picos de tráfico</li>
+                <li>
+                  Posibilidad de "vendor lock-in" (dependencia del proveedor)
+                </li>
+                <li>Latencia en algunas aplicaciones sensibles al tiempo</li>
+                <li>Preocupaciones sobre la seguridad de los datos</li>
+                <li>Complejidad en la migración de aplicaciones existentes</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2>¿Cuándo se recomienda su uso?</h2>
+          <p>Un servidor web en la nube es ideal para:</p>
+          <ul>
+            <li>Sitios web con tráfico variable o impredecible</li>
+            <li>Aplicaciones que necesitan escalar rápidamente</li>
+            <li>Empresas que buscan reducir costos operativos de TI</li>
+            <li>Startups que quieren evitar grandes inversiones iniciales</li>
+            <li>Proyectos que requieren alta disponibilidad global</li>
+            <li>Aplicaciones modernas basadas en microservicios</li>
+            <li>
+              Negocios que prefieren gastos operativos (OPEX) en lugar de gastos
+              de capital (CAPEX)
+            </li>
+            <li>
+              Organizaciones con recursos limitados de TI para gestionar
+              infraestructura física
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Requisitos de Hardware</h2>
+          <p>
+            Una de las principales ventajas de los servidores web en la nube es
+            que no requieren que el cliente invierta en hardware físico. Sin
+            embargo, existen algunas consideraciones importantes:
+          </p>
+          <ul>
+            <li>
+              <strong>Cliente:</strong> Solo necesita una computadora con
+              conexión a internet para administrar el servidor
+            </li>
+            <li>
+              <strong>Conexión:</strong> Se recomienda una conexión estable y
+              rápida para la administración
+            </li>
+            <li>
+              <strong>Proveedor:</strong> El hardware lo gestiona el proveedor
+              de servicios en la nube
+            </li>
+          </ul>
+
+          <p>
+            Los recursos que típicamente se pueden configurar en un servidor web
+            en la nube incluyen:
+          </p>
+          <ul>
+            <li>
+              <strong>Procesamiento (vCPUs):</strong> Desde 1 hasta cientos de
+              núcleos virtuales
+            </li>
+            <li><strong>Memoria RAM:</strong> Desde 1GB hasta 1TB o más</li>
+            <li>
+              <strong>Almacenamiento:</strong> Desde pocos GB hasta varios TB,
+              con diferentes tipos (SSD, HDD)
+            </li>
+            <li>
+              <strong>Ancho de banda:</strong> Generalmente medido en GB de
+              transferencia mensual o velocidad de conexión
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Sistemas Operativos Compatibles</h2>
+          <p>
+            Los servidores web en la nube ofrecen una amplia gama de sistemas
+            operativos para elegir:
+          </p>
+
+          <h3>Sistemas Operativos Compatibles:</h3>
+          <ul>
+            <li>
+              <strong>Linux:</strong> Todas las distribuciones principales
+              (Ubuntu, CentOS, Debian, Red Hat, etc.)
+            </li>
+            <li>
+              <strong>Windows Server:</strong> Diferentes versiones, desde 2012
+              hasta las más recientes
+            </li>
+            <li><strong>FreeBSD:</strong> Disponible en muchos proveedores</li>
+            <li>
+              <strong>Sistemas personalizados:</strong> Algunos proveedores
+              permiten importar imágenes de SO propias
+            </li>
+          </ul>
+
+          <h3>Sistemas Operativos No Compatibles:</h3>
+          <ul>
+            <li>
+              <strong>Sistemas operativos antiguos:</strong> Versiones muy
+              antiguas de Windows o Linux que ya no reciben soporte
+            </li>
+            <li>
+              <strong>Sistemas propietarios especializados:</strong> Algunos
+              sistemas operativos de nicho pueden no estar disponibles
+            </li>
+            <li>
+              <strong>macOS:</strong> Debido a restricciones de licencia de
+              Apple, no se puede virtualizar en la mayoría de proveedores
+              (excepto en hardware de Apple)
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Ejemplos de Proveedores</h2>
+          <div class="server-types">
+            <div class="server-card">
+              <h3>Amazon Web Services (AWS)</h3>
+              <p>
+                El líder del mercado con la mayor variedad de servicios. Ofrece
+                EC2 para servidores virtuales, S3 para almacenamiento, y
+                servicios especializados como Lambda para computación
+                serverless.
+              </p>
+              <a href="https://aws.amazon.com/" class="btn">Más información</a>
+            </div>
+
+            <div class="server-card">
+              <h3>Microsoft Azure</h3>
+              <p>
+                Perfecta integración con productos Microsoft y excelente soporte
+                para empresas. Ofrece Virtual Machines, App Service y una amplia
+                gama de servicios PaaS.
+              </p>
+              <a href="https://azure.microsoft.com/" class="btn"
+                >Más información</a
+              >
+            </div>
+
+            <div class="server-card">
+              <h3>Google Cloud Platform</h3>
+              <p>
+                Conocido por su excelente rendimiento en redes y herramientas de
+                big data. Servicios como Compute Engine y App Engine son
+                populares para sitios web.
+              </p>
+              <a href="https://cloud.google.com/" class="btn"
+                >Más información</a
+              >
+            </div>
+
+            <div class="server-card">
+              <h3>DigitalOcean</h3>
+              <p>
+                Enfocado en la simplicidad y facilidad de uso, con precios
+                predecibles. Popular entre desarrolladores independientes y
+                startups.
+              </p>
+              <a href="https://www.digitalocean.com/" class="btn"
+                >Más información</a
+              >
             </div>
           </div>
         </section>
       </article>
     </main>
+
+    <footer>
+      <p>&copy; 2025 Servidores Web | Todos los derechos reservados</p>
+    </footer>
   </body>
 </html>
